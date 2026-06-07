@@ -1,6 +1,6 @@
 # Snake plugin for OpenRCT2
 
-This plugin is a plugin version for OpenRCT2 of the classic arcade game Snake.
+This is a plugin version for OpenRCT2 of the classic arcade game Snake.
 
 <img width="492" height="440" alt="image" src="https://github.com/user-attachments/assets/17975fe8-c3e5-4d9d-beda-7cfb520b4f29" />
 
