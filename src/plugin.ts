@@ -1,12 +1,12 @@
 /// <reference path="../lib/openrct2.d.ts" />
 
-import { startup } from "./startup";
+import { startup } from "./startup.js";
 
 registerPlugin({
-	name: "Name of your plugin",
-	version: "1.0",
-	authors: [ "Your name" ],
-	type: "remote",
+	name: "Snake",
+	version: "0.1",
+	authors: [ "Manticore-007" ],
+	type: "local",
 	licence: "MIT",
 	/**
 	 * This field determines which OpenRCT2 API version to use. It's best to always use the
