@@ -43,7 +43,6 @@ export const windowGame = tabwindow({
 				                    padding: {left: "1w"},
                                     text: compute(score, highscore, gamespeed, (s, h, g) => {
                                         let colour = "";
-                                        console.log(oldRecord);
                                         if (s > oldRecord) {
                                             colour = "{YELLOW}"
                                         }
