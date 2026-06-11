@@ -1,7 +1,9 @@
+import replace from "@rollup/plugin-replace";
 import resolve from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import { getConfigHome, getDocumentsFolder } from "platform-folders";
+import pkg from "./package.json"with { type: "json"};
 
 
 const options =
@@ -58,6 +60,13 @@ const config = {
 	},
 	treeshake: "smallest",
 	plugins: [
+		replace({
+			include: "./src/ui.ts",
+			preventAssignment: true,
+			values: {
+				__PLUGIN_VERSION__: pkg.version,
+			}
+		}),
 		resolve(),
 		typescript(),
 		terser({

@@ -1,10 +1,11 @@
 /// <reference path="../lib/openrct2.d.ts" />
 
 import { startup } from "./startup.js";
+import { pluginVersion } from "./ui.js";
 
 registerPlugin({
 	name: "Snake",
-	version: "0.1",
+	version: pluginVersion,
 	authors: [ "Manticore-007" ],
 	type: "local",
 	licence: "MIT",

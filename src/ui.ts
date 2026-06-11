@@ -10,6 +10,7 @@ const colour = {
     secondary: store<Colour>(getColour("snake.colour.secondary")),
 }
 
+export const pluginVersion = "__PLUGIN_VERSION__";
 export const isPinned = store<boolean>(getMenuItem());
 
 export const windowGame = tabwindow({
@@ -216,7 +217,7 @@ export const windowGame = tabwindow({
                 label({ text: "Snake, a plugin for OpenRCT2", alignment: "centred", padding: [4, 0, 8, 0] }),
                 horizontal([
                     label({ text: "Version:" + "\n\nAuthor:" + "\n\nUI:" + "\n\nSpecial\nThanks:" + "\n\n", width: "25%" }),
-                    label({ text: "{BLACK}2026.06.07" + `\n\n{BLACK}Manticore-007` + `\n\n{BLACK}FlexUI by Basssiiie` + `\n\n{BLACK}Basssiiie, {BLACK}Sadret` })
+                    label({ text: `{BLACK}${pluginVersion}` + `\n\n{BLACK}Manticore-007` + `\n\n{BLACK}FlexUI by Basssiiie` + `\n\n{BLACK}Basssiiie, {BLACK}Sadret` })
                 ]),
                 label({ text: "https://github.com/Manticore-007\n/OpenRCT2-Snake", padding: ["90%", 0, 0, 0], alignment: "centred" })
             ]
